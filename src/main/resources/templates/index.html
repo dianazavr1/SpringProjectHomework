@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* светлый фон */
+            color: #333333; /* темный текст */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0066cc; /* синий цвет для заголовка */
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        a {
+            font-size: 1.2em;
+            color: #0066cc;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #ff6600; /* оранжевый цвет при наведении */
+        }
+
+        span {
+            font-weight: bold;
+            color: #ff6600; /* оранжевый цвет для информации о машине */
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the MVC Application</h1>
+<p>Your car: <span th:text="${car}"></span></p>
+<a href="/scopes">View Scopes</a>
+</body>
+</html>
+

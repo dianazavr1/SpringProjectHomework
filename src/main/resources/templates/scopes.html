@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Scopes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* светлый фон */
+            color: #333333; /* темный текст */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0066cc; /* синий цвет для заголовка */
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        span {
+            font-weight: bold;
+            color: #ff6600; /* оранжевый цвет для значений бинов */
+        }
+
+        .info-box {
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+
+        .highlight {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+<h1>Bean Scopes</h1>
+<div class="info-box">
+    <p>Singleton Bean: <span class="highlight" th:text="${singleton}"></span></p>
+</div>
+<div class="info-box">
+    <p>Prototype Bean: <span class="highlight" th:text="${prototype}"></span></p>
+</div>
+</body>
+</html>
+
